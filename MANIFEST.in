@@ -1,0 +1,13 @@
+# CSS Files
+recursive-include src *.css
+
+# picture files
+recursive-include src *.gif
+recursive-include src *.png
+
+# font files
+recursive-include src *.eot
+recursive-include src *.ttf
+recursive-include src *.svg
+recursive-include src *.woff
+recursive-include src *.woff2
