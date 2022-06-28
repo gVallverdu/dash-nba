@@ -11,7 +11,7 @@ def header():
             html.H2("Stats on NBA players - Dash app example"),
             html.Img(
                 src=dash.get_asset_url("img/logo-nba.jpeg"),
-                width="10%",
+                height="100px",
                 style={"float": "right"}
             ),
         ],
