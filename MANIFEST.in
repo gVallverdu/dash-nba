@@ -1,7 +1,11 @@
+# CSV Files  
+recursive-include src *.csv
+
 # CSS Files
 recursive-include src *.css
 
 # picture files
+recursive-include src *.jpeg
 recursive-include src *.gif
 recursive-include src *.png
 
