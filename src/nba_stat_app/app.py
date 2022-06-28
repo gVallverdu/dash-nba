@@ -3,7 +3,7 @@
 
 import dash
 
-from components import make_layout
+from nba_stat_app.components import make_layout
 from nba_stat_data import df_nba
 
 # Set up app
