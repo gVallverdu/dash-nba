@@ -1,12 +1,14 @@
 #coding: utf-8
 
+""" This is the main function to be used as an entry point in order to
+run the application. """
+
 import webbrowser
 from threading import Timer
-# from pathlib import Path
 
 from nba_stat_app.app import app
 
-TITLE = """
+TITLE = r"""
   ___          _      _  _ ___   _   
  |   \ __ _ __| |_   | \| | _ ) /_\  
  | |) / _` (_-< ' \  | .` | _ \/ _ \ 
@@ -16,6 +18,7 @@ TITLE = """
  Authors: Germain Salvato Vallverdu
  Contact: germain.vallverdu@gmail.com
  """
+
 
 def main():
     """ Run the app from an entry point defined in setup.cfg
@@ -32,7 +35,7 @@ def main():
     Timer(10, webbrowser.open_new(url))
 
     # run app
-    app.run_server(
+    app.run(
         host=host,
         port=port,
         debug=False
