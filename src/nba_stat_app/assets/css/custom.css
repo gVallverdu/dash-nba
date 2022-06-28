@@ -1,0 +1,42 @@
+/* ==========================================================================
+   style.css
+ ========================================================================== */
+ 
+body {
+    background: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    margin: 0;
+}
+
+h3 {
+  color: #244385;
+  font-weight: 400;
+}
+
+.header {
+  background-color: #244385;
+  min-height: 100px;
+  border-bottom: solid 4px #B82B35;
+  padding: 10px 50px 10px 50px;
+}
+
+.header h2 {
+  color: white;
+  font-weight: bold;
+  float: left;
+  font-size:xx-large;
+}
+
+.footer {
+  background-color: #244385;
+  border-top: solid 4px #B82B35;
+  margin-top: 20px;
+  min-height: 100px;
+  padding: 10px 50px 10px 50px;
+}
+
+.footer h5 {
+  color: white;
+  text-align: left;
+}
+
