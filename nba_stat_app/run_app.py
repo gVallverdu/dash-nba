@@ -5,6 +5,7 @@ run the application. """
 
 import webbrowser
 from threading import Timer
+from pathlib import Path
 
 from nba_stat_app.app import app
 

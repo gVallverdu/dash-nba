@@ -20,9 +20,18 @@ server = app.server
 
 # read in data
 # ----------------------------------------------------------------------
-# filename = dash.get_asset_url("data/nba_physiques.csv")
-filename = Path(__file__).parent / "assets/data/nba_physiques.csv"
-df = pd.read_csv(filename, index_col=0, dtype={"Year": "int"})
+# Here we are reading the data *before* the app starts. The url of the
+# server is still unknown. If you run the app on localhost you will
+# not found the data file because the assets path start from the root.
+try:
+    # use assets folder in case of online deployment
+    filename = dash.get_asset_url("data/nba_physiques.csv")
+    df = pd.read_csv(filename, index_col=0, dtype={"Year": "int"})
+except FileNotFoundError:
+    # Open file locally
+    filename = Path(__file__).parent / "assets/data/nba_physiques.csv"
+    df = pd.read_csv(filename, index_col=0, dtype={"Year": "int"})
+
 df = df.assign(bmi=df.weight / ((df.height / 100) ** 2))
 df_nba = df[["Year", "height", "weight",
              "bmi", "PER", "PTS", "pos_simple"]].copy()
@@ -150,4 +159,4 @@ def show_pivot_table(value):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=True, host="localhost")

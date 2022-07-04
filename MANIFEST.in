@@ -1,17 +1,17 @@
 # CSV Files  
-recursive-include src *.csv
+recursive-include nba_stat_app *.csv
 
 # CSS Files
-recursive-include src *.css
+recursive-include nba_stat_app *.css
 
 # picture files
-recursive-include src *.jpeg
-recursive-include src *.gif
-recursive-include src *.png
+recursive-include nba_stat_app *.jpeg
+recursive-include nba_stat_app *.gif
+recursive-include nba_stat_app *.png
 
 # font files
-recursive-include src *.eot
-recursive-include src *.ttf
-recursive-include src *.svg
-recursive-include src *.woff
-recursive-include src *.woff2
+recursive-include nba_stat_app *.eot
+recursive-include nba_stat_app *.ttf
+recursive-include nba_stat_app *.svg
+recursive-include nba_stat_app *.woff
+recursive-include nba_stat_app *.woff2
