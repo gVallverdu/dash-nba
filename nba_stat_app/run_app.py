@@ -5,7 +5,6 @@ run the application. """
 
 import webbrowser
 from threading import Timer
-from pathlib import Path
 
 from nba_stat_app.app import app
 
@@ -23,7 +22,7 @@ TITLE = r"""
 
 def main():
     """ Run the app from an entry point defined in setup.cfg
-    TODO: need to check port is available and host ?
+    TODO: need to check port is available
     """
 
     print(TITLE)
