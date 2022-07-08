@@ -1,1 +1,1 @@
-web: gunicorn --chdir ./src/nba_stat_app app:server
+web: gunicorn --chdir ./nba_stat_app app:server
